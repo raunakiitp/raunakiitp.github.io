@@ -1,9 +1,11 @@
+const sections = document.querySelectorAll(".section");
+
 window.addEventListener("scroll", () => {
-  document.querySelectorAll(".card").forEach(card => {
-    const pos = card.getBoundingClientRect().top;
-    if (pos < window.innerHeight - 50) {
-      card.style.opacity = "1";
-      card.style.transform = "translateY(0)";
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      sec.style.opacity = 1;
+      sec.style.transform = "translateY(0)";
     }
   });
 });
