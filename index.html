@@ -1,93 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Raunak Yadav | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Raunak’s Portfolio</title>
-<link rel="stylesheet" href="styles.css" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- HERO -->
-<section id="hero">
-  <div class="container">
-    <h1>Hi, I’m Raunak</h1>
-    <p>AI & Cybersecurity Enthusiast | BS-MS Student @ IIT Patna</p>
-    <a href="#contact" class="btn">Contact Me</a>
-  </div>
+<section class="hero">
+  <h1>Hi, I’m <span>Raunak Yadav</span></h1>
+  <p>BS-MS Student | AI & Cybersecurity | IIT Patna</p>
+  <a href="#contact" class="btn">Contact Me</a>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>I’m a passionate tech student focused on AI & Cybersecurity. I build smart systems and secure solutions.</p>
-    <h3>Skills</h3>
-    <ul class="skills">
-      <li>Python</li>
-      <li>Machine Learning</li>
-      <li>Cybersecurity</li>
-      <li>React / Web Dev</li>
-      <li>Git & GitHub</li>
-    </ul>
+<section class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate student at IIT Patna exploring Artificial Intelligence
+    and Cybersecurity. I love building smart and secure systems.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="section dark">
+  <h2>Skills</h2>
+  <div class="cards">
+    <div class="card">Python</div>
+    <div class="card">Machine Learning</div>
+    <div class="card">Cybersecurity</div>
+    <div class="card">Web Development</div>
+    <div class="card">Git & GitHub</div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
-  <div class="container">
-    <h2>Projects</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>AI Chatbot</h3>
-        <p>A smart chatbot built using Python & NLP.</p>
-        <a href="https://github.com/your-project1" target="_blank">View Code</a>
-      </div>
-      <div class="card">
-        <h3>Portfolio Website</h3>
-        <p>This portfolio itself — responsive & clean.</p>
-        <a href="https://github.com/your-repo" target="_blank">View Code</a>
-      </div>
-      <div class="card">
-        <h3>Cybersecurity Tool</h3>
-        <p>A python tool for network scanning & mitigation.</p>
-        <a href="https://github.com/your-project2" target="_blank">View Code</a>
-      </div>
+<section class="section">
+  <h2>Projects</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>AI Chatbot</h3>
+      <p>NLP based intelligent chatbot.</p>
+    </div>
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>Modern responsive portfolio.</p>
+    </div>
+    <div class="card">
+      <h3>Cyber Tool</h3>
+      <p>Security & scanning tool.</p>
     </div>
   </div>
 </section>
 
-<!-- RESUME / EDUCATION -->
-<section id="resume">
-  <div class="container">
-    <h2>Education</h2>
-    <p><b>IIT Patna</b> — BS-MS in AI & Cybersecurity (Expected 2025)</p>
-    <h3>Download Resume</h3>
-    <a href="resume.pdf" download class="btn">Download</a>
-  </div>
-</section>
-
 <!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/yourformid" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required/>
-      <input type="email" name="email" placeholder="Your Email" required/>
-      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </div>
+<section class="section dark" id="contact">
+  <h2>Contact</h2>
+  <p>Email: <b>raunak@example.com</b></p>
+  <p>
+    <a href="https://www.linkedin.com/in/raunak-iitp" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/raunakiitp" target="_blank">GitHub</a>
+  </p>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>Connect with me:</p>
-  <a href="https://www.linkedin.com/in/raunak-iitp" target="_blank">LinkedIn</a> |
-  <a href="https://github.com/raunak-github" target="_blank">GitHub</a>
+  © 2026 Raunak Yadav
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
