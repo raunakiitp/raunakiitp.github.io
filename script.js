@@ -1,11 +1,11 @@
-const sections = document.querySelectorAll(".section");
+const reveals = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", () => {
-  sections.forEach(sec => {
-    const top = sec.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
-      sec.style.opacity = 1;
-      sec.style.transform = "translateY(0)";
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
     }
   });
-});
+}, { threshold: 0.15 });
+
+reveals.forEach(el => observer.observe(el));
