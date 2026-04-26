@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raunak Yadav | BS-MS Student at IIT Patna | AI & Cybersecurity Enthusiast</title>
+  <meta name="description" content="Portfolio of Raunak Yadav - BS-MS Student at IIT Patna, AI & Cybersecurity Enthusiast. Explore my experience, achievements, and education." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-profile">
+        <div class="profile-avatar-wrapper">
+          <img src="Profile.png" alt="Raunak Yadav" class="profile-avatar" id="profile-img" />
+          <span class="available-badge">
+            <span class="badge-dot"></span>Available
+          </span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#home" class="nav-item active" id="nav-home" data-section="home">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          <span>Home</span>
+          <span class="nav-dot"></span>
+        </a>
+        <a href="#about" class="nav-item" id="nav-about" data-section="about">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span>About Me</span>
+          <span class="nav-dot"></span>
+        </a>
+        <a href="#experience" class="nav-item" id="nav-experience" data-section="experience">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          <span>Experience</span>
+          <span class="nav-dot"></span>
+        </a>
+        <a href="#achievements" class="nav-item" id="nav-achievements" data-section="achievements">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+          <span>Achievements</span>
+          <span class="nav-dot"></span>
+        </a>
+        <a href="#education" class="nav-item" id="nav-education" data-section="education">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+          <span>Education</span>
+          <span class="nav-dot"></span>
+        </a>
+        <a href="#contact" class="nav-item" id="nav-contact" data-section="contact">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+          <span>Contact</span>
+          <span class="nav-dot"></span>
+        </a>
+      </nav>
+
+      <div class="sidebar-socials">
+        <a href="https://linkedin.com/in/raunak-iitp" target="_blank" rel="noopener" class="social-icon" id="social-linkedin" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="https://github.com/raunakiitp" target="_blank" rel="noopener" class="social-icon" id="social-github" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="https://www.instagram.com/itsme.raunak_/" target="_blank" rel="noopener" class="social-icon" id="social-instagram" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+
+      <!-- Home Section -->
+      <section id="home" class="section section-home">
+        <div class="welcome-badge">
+          👋 Welcome to my portfolio
+        </div>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-heading">
+              Hi There!<br />I'm<br />
+              <span class="hero-name">Raunak<br />Yadav</span>
+            </h1>
+            <p class="hero-subtitle">BS-MS Student at IIT Patna | AI &amp; Cybersecurity Enthusiast</p>
+            <p class="hero-description">
+              A passionate student exploring the worlds of Artificial Intelligence and Cybersecurity. I'm dedicated to learning, building, and contributing to innovative tech solutions. Currently seeking opportunities to grow through internships and meaningful collaborations.
+            </p>
+          </div>
+          <div class="hero-image-container">
+            <div class="hero-image-card">
+              <img src="Profile.png" alt="Raunak Yadav" class="hero-photo" />
+            </div>
+            <div class="hero-image-accent"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section section-about">
+        <h2 class="section-title"><span class="title-black">ABOUT</span> <span class="title-yellow">ME</span></h2>
+        <div class="section-title-underline"></div>
+        <div class="about-card">
+          <p class="about-text">
+            I am a BS-MS student at IIT Patna with a strong interest in
+            <span class="highlight-yellow">Artificial Intelligence</span> and
+            <span class="highlight-yellow">Cybersecurity</span>. I enjoy learning modern technologies and building clean, functional digital experiences. I am actively exploring opportunities to grow through internships and collaborations, with a focus on creating impactful solutions in the tech world.
+          </p>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="section section-experience">
+        <h2 class="section-title"><span class="title-black">MY</span> <span class="title-yellow">EXPERIENCE</span></h2>
+        <div class="section-title-underline"></div>
+
+        <div class="interests-subsection">
+          <h3 class="subsection-heading">Areas of <span class="title-yellow">Learning &amp; Interest</span></h3>
+          <div class="interest-cards">
+            <div class="interest-card">
+              <div class="interest-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"></path></svg>
+              </div>
+              <h4 class="interest-title">Artificial Intelligence</h4>
+              <p class="interest-desc">Deep Learning, Neural Networks, Machine Learning algorithms, AI applications</p>
+            </div>
+            <div class="interest-card">
+              <div class="interest-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <h4 class="interest-title">Cybersecurity</h4>
+              <p class="interest-desc">Network Security, Ethical Hacking, Security fundamentals, Threat analysis</p>
+            </div>
+            <div class="interest-card">
+              <div class="interest-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h4 class="interest-title">Web Development</h4>
+              <p class="interest-desc">HTML, CSS, JavaScript, Modern frameworks, Responsive design</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="prof-experience-subsection">
+          <h3 class="subsection-heading">Professional <span class="title-yellow">Experience</span></h3>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="exp-header">
+                  <div class="exp-icon exp-icon-ai">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"></path></svg>
+                  </div>
+                  <div class="exp-meta">
+                    <span class="exp-date">Dec 2025 - Present</span>
+                    <span class="exp-badge badge-internship">Internship</span>
+                  </div>
+                </div>
+                <h4 class="exp-title">AI &amp; Machine Learning Intern</h4>
+                <p class="exp-company">Edunet Foundation</p>
+                <p class="exp-desc">Working on AI/ML projects, gaining hands-on experience with machine learning algorithms, deep learning, and real-world AI applications.</p>
+                <button class="view-cert-btn" style="margin-top: 10px;" onclick="openCert('certificates/exp-edunet.png','Internship Offer Letter','Edunet Foundation')">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                  View Offer Letter
+                </button>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="exp-header">
+                  <div class="exp-icon exp-icon-work">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  </div>
+                  <div class="exp-meta">
+                    <span class="exp-date">Oct 2025 - Present</span>
+                    <span class="exp-badge badge-fulltime">Full-time</span>
+                  </div>
+                </div>
+                <h4 class="exp-title">Chief Executive Officer</h4>
+                <p class="exp-company">Docs247</p>
+                <p class="exp-desc">Leading the organization and driving strategic initiatives in document management solutions.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="exp-header">
+                  <div class="exp-icon exp-icon-work">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  </div>
+                  <div class="exp-meta">
+                    <span class="exp-date">Dec 2025 - Present</span>
+                    <span class="exp-badge badge-leadership">Leadership</span>
+                  </div>
+                </div>
+                <h4 class="exp-title">Campus Ambassador</h4>
+                <p class="exp-company">eDC IIT Delhi</p>
+                <p class="exp-desc">Representing eDC IIT Delhi to promote entrepreneurship and innovation among students, organizing events and building community.</p>
+                <button class="view-cert-btn" style="margin-top: 10px;" onclick="openCert('certificates/exp-edc.png','Campus Ambassador Offer Letter','eDC IIT Delhi')">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                  View Offer Letter
+                </button>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="exp-header">
+                  <div class="exp-icon exp-icon-work">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  </div>
+                  <div class="exp-meta">
+                    <span class="exp-date">Sep 2025 - Oct 2025</span>
+                    <span class="exp-badge badge-campus">Campus Role</span>
+                  </div>
+                </div>
+                <h4 class="exp-title">Campus Ambassador</h4>
+                <p class="exp-company">IIT Delhi Rendezvous</p>
+                <p class="exp-desc">Selected as a Campus Ambassador representing IIT Delhi Rendezvous, one of Asia's largest cultural festivals.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="exp-header">
+                  <div class="exp-icon exp-icon-code">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                  </div>
+                  <div class="exp-meta">
+                    <span class="exp-date">Sep 2025 - Oct 2025</span>
+                    <span class="exp-badge badge-internship">Internship</span>
+                  </div>
+                </div>
+                <h4 class="exp-title">Marketing Intern</h4>
+                <p class="exp-company">Corizo Edutech</p>
+                <p class="exp-desc">Gained hands-on experience in digital marketing, community outreach, and educational technology promotion.</p>
+                <button class="view-cert-btn" style="margin-top: 10px;" onclick="openCert('certificates/exp-corizo.png','Marketing Internship Offer Letter','Corizo Edutech')">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                  View Offer Letter
+                </button>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="exp-header">
+                  <div class="exp-icon exp-icon-work">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  </div>
+                  <div class="exp-meta">
+                    <span class="exp-date">Sep 2025 - Nov 2025</span>
+                    <span class="exp-badge badge-research">Research</span>
+                  </div>
+                </div>
+                <h4 class="exp-title">Campus Ambassador</h4>
+                <p class="exp-company">GUESSS India</p>
+                <p class="exp-desc">Part of the world's largest research project studying entrepreneurial intentions and activities of university students.</p>
+                <button class="view-cert-btn" style="margin-top: 10px;" onclick="openCert('certificates/exp-guesss.png','Campus Ambassador Offer Letter','GUESSS India')">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                  View Offer Letter
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievements Section -->
+      <section id="achievements" class="section section-achievements">
+        <h2 class="section-title"><span class="title-black">MY</span> <span class="title-yellow">ACHIEVEMENTS</span></h2>
+        <div class="section-title-underline"></div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">18+</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Leadership Roles</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Tech Interests</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Internships</div>
+          </div>
+        </div>
+
+        <h3 class="certs-heading">Certifications &amp; <span class="title-yellow">Licenses</span></h3>
+
+        <!-- AI Certs -->
+        <div class="cert-category cert-ai">
+          <div class="cert-category-header">
+            <div class="cert-category-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"></path></svg>
+            </div>
+            <h4 class="cert-category-title">Artificial Intelligence</h4>
+            <span class="cert-count">9</span>
+          </div>
+          <div class="cert-grid">
+            <div class="cert-item">
+              <div class="cert-name">AI Agents Intensive Course</div>
+              <div class="cert-org">Kaggle &amp; Google</div>
+              <div class="cert-date">Dec 2025</div>
+              <button class="view-cert-btn" onclick="openCert('certificates/cert-kaggle-google.png','AI Agents Intensive Course','Kaggle &amp; Google')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                View Certificate
+              </button>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">AI For All - AI Aware Stage</div>
+              <div class="cert-org">Intel &amp; Digital India</div>
+              <div class="cert-date">Jan 2026</div>
+              <button class="view-cert-btn" onclick="openCert('certificates/cert-intel-aware.png','AI For All - AI Aware Stage','Intel &amp; Digital India')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                View Certificate
+              </button>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">AI For All - AI Appreciate Stage</div>
+              <div class="cert-org">Intel &amp; Digital India</div>
+              <div class="cert-date">Jan 2026</div>
+              <button class="view-cert-btn" onclick="openCert('certificates/cert-intel-appreciate.png','AI For All - AI Appreciate Stage','Intel &amp; Digital India')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                View Certificate
+              </button>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">AI &amp; Machine Learning Workshop</div>
+              <div class="cert-org">Techgyan</div>
+              <div class="cert-date">Nov 2025</div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">Getting Started with AI &amp; ChatGPT</div>
+              <div class="cert-org">Techgyan</div>
+              <div class="cert-date">Nov 2025</div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">AI Tools Workshop</div>
+              <div class="cert-org">Be10x</div>
+              <div class="cert-date">Nov 2025</div>
+              <button class="view-cert-btn" onclick="openCert('certificates/cert-be10x.png','AI Tools Workshop','Be10x')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                View Certificate
+              </button>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">AI for Beginners</div>
+              <div class="cert-org">HP LIFE</div>
+              <div class="cert-date">Oct 2025</div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">Introduction to Generative AI</div>
+              <div class="cert-org">Simplilearn</div>
+              <div class="cert-date">Oct 2025</div>
+              <button class="view-cert-btn" onclick="openCert('certificates/cert-genai-simplilearn.png','Introduction to Generative AI','Simplilearn')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                View Certificate
+              </button>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">Gemini Certified Student</div>
+              <div class="cert-org">Google</div>
+              <div class="cert-date">Oct 2025</div>
+              <button class="view-cert-btn" onclick="openCert('certificates/cert-gemini.png','Gemini Certified Student','Google')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                View Certificate
+              </button>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">AI Masterclass – Build your Avatar</div>
+              <div class="cert-org">Physics Wallah (PW Skills)</div>
+              <div class="cert-date">Sep 2025</div>
+              <button class="view-cert-btn" onclick="openCert('certificates/cert-pw-ai.png','AI Masterclass – Build your Avatar','Physics Wallah')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cybersecurity Certs -->
+        <div class="cert-category cert-cyber">
+          <div class="cert-category-header">
+            <div class="cert-category-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h4 class="cert-category-title">Cybersecurity</h4>
+            <span class="cert-count">2</span>
+          </div>
+          <div class="cert-grid">
+            <div class="cert-item">
+              <div class="cert-name">Advanced Cybersecurity Awareness Quiz</div>
+              <div class="cert-org">IIT Kanpur</div>
+              <div class="cert-date">Nov 2025</div>
+              <button class="view-cert-btn" onclick="openCert('certificates/cert-iitk-cyber.png','Advanced Cybersecurity Awareness Quiz','IIT Kanpur')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                View Certificate
+              </button>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">Cybersecurity Awareness Quiz</div>
+              <div class="cert-org">IIT Kanpur</div>
+              <div class="cert-date">Nov 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Programming Certs -->
+        <div class="cert-category cert-prog">
+          <div class="cert-category-header">
+            <div class="cert-category-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h4 class="cert-category-title">Programming &amp; Development</h4>
+            <span class="cert-count">3</span>
+          </div>
+          <div class="cert-grid">
+            <div class="cert-item">
+              <div class="cert-name">Python Coder</div>
+              <div class="cert-org">Kaggle</div>
+              <div class="cert-date">Nov 2025</div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">Python for Beginners</div>
+              <div class="cert-org">NIELIT</div>
+              <div class="cert-date">Nov 2025</div>
+              <button class="view-cert-btn" onclick="openCert('certificates/cert-nielit-python.png','Python for Beginners','NIELIT')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                View Certificate
+              </button>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">Google Play Store Listing</div>
+              <div class="cert-org">Google Play Academy</div>
+              <div class="cert-date">Jan 2026</div>
+              <button class="view-cert-btn" onclick="openCert('certificates/cert-google-play.png','Google Play Store Listing','Google Play Academy')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Certs -->
+        <div class="cert-category cert-other">
+          <div class="cert-category-header">
+            <div class="cert-category-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+            <h4 class="cert-category-title">Other Certifications</h4>
+            <span class="cert-count">3</span>
+          </div>
+          <div class="cert-grid">
+            <div class="cert-item">
+              <div class="cert-name">Startup School: Prompt To Prototype</div>
+              <div class="cert-org">Google for Startups</div>
+              <div class="cert-date">Dec 2025</div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">Global Navigation Satellite System</div>
+              <div class="cert-org">ISRO</div>
+              <div class="cert-date">Oct 2025</div>
+              <button class="view-cert-btn" onclick="openCert('certificates/cert-isro.png','Global Navigation Satellite System','ISRO')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                View Certificate
+              </button>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">TCS iON Career Edge</div>
+              <div class="cert-org">TCS iON</div>
+              <div class="cert-date">Oct 2025</div>
+              <button class="view-cert-btn" onclick="openCert('certificates/cert-tcs-ion.png','TCS iON Career Edge','TCS iON')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                View Certificate
+              </button>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name">Nationwide Ideathon – IIT Patna</div>
+              <div class="cert-org">Unstop</div>
+              <div class="cert-date">2025</div>
+              <button class="view-cert-btn" onclick="openCert('certificates/cert-unstop-ideathon.jpg','Nationwide Ideathon – IIT Patna','Unstop')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="section section-education">
+        <h2 class="section-title"><span class="title-black">MY</span> <span class="title-yellow">EDUCATION</span></h2>
+        <div class="section-title-underline"></div>
+
+        <div class="edu-header">
+          <div class="edu-header-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+          </div>
+          <h3 class="edu-header-title">Academic Background</h3>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-year">2025 - Present</div>
+          <h4 class="edu-degree">BS-MS (Integrated)</h4>
+          <p class="edu-institution">Indian Institute of Technology, Patna</p>
+          <p class="edu-desc">
+            Pursuing an integrated Bachelor-Master degree program at one of India's premier technical institutions. Focusing on advanced studies in technology with special emphasis on Artificial Intelligence, Cybersecurity, and modern software development practices.
+          </p>
+          <div class="edu-tags">
+            <span class="edu-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+              Full-Time Student
+            </span>
+            <span class="edu-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+              IIT Patna
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section section-contact">
+        <h2 class="section-title"><span class="title-black">GET IN</span> <span class="title-yellow">TOUCH</span></h2>
+        <div class="section-title-underline"></div>
+
+        <div class="contact-grid">
+          <div class="contact-left">
+            <p class="contact-tagline">Don't hesitate to get in touch with me. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                </div>
+                <div class="contact-info-text">
+                  <div class="contact-info-label">Email</div>
+                  <div class="contact-info-value">yadavraunak2004@gmail.com</div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-info-text">
+                  <div class="contact-info-label">Location</div>
+                  <div class="contact-info-value">IIT Patna, Bihar, India</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social-section">
+              <p class="connect-label">Connect with me</p>
+              <div class="contact-socials">
+                <a href="https://linkedin.com/in/raunak-iitp" target="_blank" rel="noopener" class="contact-social-btn" id="contact-linkedin" aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://github.com/raunakiitp" target="_blank" rel="noopener" class="contact-social-btn" id="contact-github" aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://www.instagram.com/itsme.raunak_/" target="_blank" rel="noopener" class="contact-social-btn" id="contact-instagram" aria-label="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="How can I help you?" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn" id="submit-btn">
+                Send Message
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>© 2025 <span class="footer-name">Raunak Yadav</span>. All rights reserved.</p>
+        <p class="footer-sub">Designed with ❤️ | BS-MS Student @ IIT Patna</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- Certificate Modal -->
+  <div id="cert-modal" class="cert-modal-overlay" onclick="closeCertOnOverlay(event)">
+    <div class="cert-modal-box">
+      <div class="cert-modal-header">
+        <div class="cert-modal-title-wrap">
+          <h3 id="cert-modal-title" class="cert-modal-title"></h3>
+          <p id="cert-modal-org" class="cert-modal-org"></p>
+        </div>
+        <button class="cert-modal-close" onclick="closeCert()" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="cert-modal-img-wrap">
+        <img id="cert-modal-img" src="" alt="Certificate" />
+      </div>
+      <div class="cert-modal-footer">
+        <a id="cert-modal-download" href="" download class="cert-download-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
